@@ -1,0 +1,170 @@
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;     
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*Elementos base*/
+
+body {
+    background: var(--preta);
+    font-family: 'arial', 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+header .container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+header nav a {
+    text-decoration:none;
+    color:#FFF;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+header nav a:hover{
+    color:#AAA;
+}
+
+
+/*Filme principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('../img/capa\ peakyblinders.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom:40px;
+}
+
+.titulo {
+    margin-top: 10%;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao-play {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 10px 20px;
+    margin-right: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-more {
+    background-color: rgba(94, 94, 94, 0.9);
+    color: #FFF;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao-search {
+    align-items: right;
+    border:none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.botao-novidade {
+    align-items: right;
+    border:none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+
+header img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10%;
+    height: 40px;
+    cursor: pointer;
+    
+    
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.botao-play:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.botao-more:hover {
+    background-color: rgba(94, 94, 94, 0.7);
+}
+
+i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.container .descricao {
+    width: 50%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-series {
+    margin-bottom: 50px;
+}
+
+.carrosel-filmes {
+    margin-bottom: 50px;
+}
+
+h4 {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    margin: 10px 5px 0 30px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
